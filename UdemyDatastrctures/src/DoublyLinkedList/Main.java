@@ -19,11 +19,11 @@ public class Main {
         //list.removeFromFront();
 
         list.printNode();
-        list.removeFromFront();
+        //list.removeFromFront();
         System.out.println("after removal");
         list.printNode();
         System.out.println("after end removal");
-        list.removeFromEnd();
+        //list.removeFromEnd();
         list.printNode();
     }
 }
