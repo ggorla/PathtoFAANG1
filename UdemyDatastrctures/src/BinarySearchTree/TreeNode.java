@@ -33,6 +33,13 @@ public class TreeNode {
         this.rightNode = rightNode;
     }
 
+    public void preOrder(){
+        System.out.println(data);
+        if(leftNode!=null)
+            leftNode.preOrder();
+        if(rightNode!=null)
+            rightNode.preOrder();
+    }
     public void insert(int value){
         if(value == data)
             return;
@@ -57,9 +64,16 @@ public class TreeNode {
     public void inOrderTreversal(){
         if(leftNode!=null)
             leftNode.inOrderTreversal();
-        System.out.println(data+".");
+        System.out.print(data+".");
         if(rightNode!=null)
             rightNode.inOrderTreversal();
 
+    }
+
+    public int min() {
+        if(leftNode== null)
+            return data;
+        else
+            return leftNode.min();
     }
 }
